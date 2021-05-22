@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd40dd40-d589-46ca-9619-00dab56affad" name="Default Changelist" comment="" />
+    <list default="true" id="dd40dd40-d589-46ca-9619-00dab56affad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,10 +25,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1st5swvJm7SpNqZBUDxw4L0vkLR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,21 +55,6 @@
       <recent name="D:\weatherTop\public\images" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +64,10 @@
       <option name="presentableId" value="Default" />
       <updated>1621679256298</updated>
       <workItem from="1621679257823" duration="10066000" />
-      <workItem from="1621702029446" duration="2390000" />
+      <workItem from="1621702029446" duration="3282000" />
+      <workItem from="1621706845407" duration="259000" />
+      <workItem from="1621707124574" duration="394000" />
+      <workItem from="1621707539291" duration="199000" />
     </task>
     <servers />
   </component>
