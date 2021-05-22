@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd40dd40-d589-46ca-9619-00dab56affad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iws" afterDir="false" />
-    </list>
+    <list default="true" id="dd40dd40-d589-46ca-9619-00dab56affad" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +63,7 @@
       <workItem from="1621702029446" duration="3282000" />
       <workItem from="1621706845407" duration="259000" />
       <workItem from="1621707124574" duration="394000" />
-      <workItem from="1621707539291" duration="199000" />
+      <workItem from="1621707539291" duration="579000" />
     </task>
     <servers />
   </component>
