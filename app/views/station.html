@@ -1,0 +1,192 @@
+#{extends 'main.html' /}
+#{set title:'DashBoard' /}
+
+#{menu id:"dashboard"/}
+<section class="ui segment">
+
+    #{latestReadingBanner station:station/}
+    #{listReadings station:station/}
+    #{addReading station:station/}
+    <table class="ui fixed table">
+        <h2>Reading Appendix</h2>
+        <h3>Weather Codes</h3>
+<thead>
+<tr>
+    <th>Code</th>
+    <th>Inference</th>
+</tr>
+</thead>
+        <tbody>
+        <tr>
+            <td>100</td>
+            <td>Clear</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>Partial Clouds</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>Cloudy</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>Light Showers</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td>Heavy Showers</td>
+        </tr>
+        <tr>
+            <td>600</td>
+            <td>Rain</td>
+        </tr>
+        <tr>
+            <td>700</td>
+            <td>Snow</td>
+        </tr>
+        <tr>
+            <td>800</td>
+            <td>Thunder</td>
+        </tr>
+        </tbody>
+
+
+    </table>
+    <h3>Wind Direction Compass</h3>
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>Compass Direction</th>
+            <th>Degree Range</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>North</td>
+            <td>348.75-11.25</td>
+        </tr>
+        <tr>
+            <td>North-NorthEast</td>
+            <td>11.25-33.75</td>
+        </tr>
+        <tr>
+            <td>NorthEast</td>
+            <td>33.75-56.25</td>
+        </tr>
+        <tr>
+            <td>East-NorthEast</td>
+            <td>56.25-78.75</td>
+        </tr>
+        <tr>
+            <td>East</td>
+            <td>78.75-101.25</td>
+        </tr>
+        <tr>
+            <td>East-SouthEast</td>
+            <td>101.25-123.75</td>
+        </tr>
+        <tr>
+            <td>SouthEast</td>
+            <td>123.75-146.25</td>
+        </tr>
+        <tr>
+            <td>South-SouthEast</td>
+            <td>146.25-168.75</td>
+        </tr>
+        <tr>
+            <td>South</td>
+            <td>168.75-191.25</td>
+        </tr>
+        <tr>
+            <td>South-SouthWest</td>
+            <td>191.25-213.75</td>
+        </tr>
+        <tr>
+            <td>SouthWest</td>
+            <td>213.75-236.25</td>
+        </tr>
+        <tr>
+            <td>West-SouthWest</td>
+            <td>236.25-258.75</td>
+        </tr>
+        <tr>
+            <td>West</td>
+            <td>258.75-281.25</td>
+        </tr>
+        <tr>
+            <td>West-NorthWest</td>
+            <td>281.25-303.75</td>
+        </tr>
+        <tr>
+            <td>NorthWest</td>
+            <td>303.75-326.25</td>
+        </tr>
+        <tr>
+            <td>North-NorthWest</td>
+            <td>326.25-348.75</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <table class="ui fixed table">
+        <h3>Beaufort Conversion</h3>
+        <thead>
+        <tr>
+            <th>Beaufort Label</th>
+            <th>Km/h</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Calm</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Light Air</td>
+            <td>1-5</td>
+        </tr>
+        <tr>
+            <td>Light Breeze</td>
+            <td>6-11</td>
+        </tr>
+        <tr>
+            <td>Gentle Breeze</td>
+            <td>12-19</td>
+        </tr>
+        <tr>
+            <td>Moderate Breeze</td>
+            <td>20-28</td>
+        </tr>
+        <tr>
+            <td>Fresh Breeze</td>
+            <td>29-38</td>
+        </tr>
+        <tr>
+            <td>Strong Breeze</td>
+            <td>39-49</td>
+        </tr>
+        <tr>
+            <td>Near Gale</td>
+            <td>50-61</td>
+        </tr>
+        <tr>
+            <td>Gale</td>
+            <td>62-74</td>
+        </tr>
+
+        <tr>
+            <td>Severe Gale</td>
+            <td>75-88</td>
+        </tr>
+        <tr>
+            <td>Strong Storm</td>
+            <td>89-102</td>
+        </tr>
+        <tr>
+            <td>Violent Storm</td>
+            <td>103-117</td>
+        </tr>
+        </tbody>
+    </table>
+</section>

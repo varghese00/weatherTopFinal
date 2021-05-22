@@ -1,0 +1,5 @@
+# tags dependencies
+
+require:
+    - play 1.5.3
+    - play -> docviewer

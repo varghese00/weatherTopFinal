@@ -1,0 +1,100 @@
+#{if _station.readings.size()>0}
+<section class="ui segment">
+    <div class="two padded basic  segments">
+        <div class=" padded segment">
+            <div class="ui  grid">
+                <div class="ui five column  grid basic row segment  ">
+                    <div class="black column" style="overflow-y:auto;white-space:nowrap;">
+                        <div class="ui grid container ">
+                            <div class=" column">
+                                <h2 class="header">
+                                    ${_station.name}
+                                </h2>
+                                <p><i class="large tint icon"></i></p>
+                                <p> Lat: ${_station.latitude} <br>
+                                    Long: ${_station.longitude}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="olive column" style="overflow-y:auto;white-space:nowrap;">
+                        <h2 class=" ui header">Weather</h2>
+                        <p> ${_station.weatherCode} </p>
+                        #{if _station.readings.code.last()=="100"}<p><i class=" large red sun   icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="200"}<p><i class=" large cloud sun  icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="300"}<p><i class=" large cloud  icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="400"}<p><i class=" large cloud sun rain  icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="500"}<p><i class=" large cloud showers heavy icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="600"}<p><i class=" large cloud rain  icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="700"}<p><i class=" large snowflake icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="800"}<p><i class=" large bolt icon"></i></p>#{/if}
+                    </div>
+
+                    <div class="red column">
+                        <h2 class="ui header">
+                            Temperature
+                        </h2>
+                        <p> ${_station.readings.temperature.last()} C </p>
+                        <p>${_station.readings.temperature.last()*9/5+32} F </p>
+                        <p> Max:${_station.maxTemperature} </p>
+                        <p> Min:${_station.minTemperature} </p>
+                        <p> TemValue:${_station.tempLastValue} </p>
+                        #{if _station.readings.temperature.last()>=25}<p><i class=" large temperature high icon"></i> Hot Weather</p>#{/if}
+                        #{if _station.readings.temperature.last()<25}<p><i class=" large temperature low icon"></i> Cold Weather</p>#{/if}
+                        #{if _station.tempLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Temp Steady</p>#{/if}
+                        #{if _station.tempLastValue==1}<p><i class=" large arrow up  icon"></i>Temp Increasing</p>#{/if}
+                        #{if _station.tempLastValue==-1}<p><i class=" large arrow down  icon"></i>Temp Decreasing</p>#{/if}
+
+                    </div>
+
+                    <div class="blue column">
+                        <div>
+                            <h2 class="ui header">
+                                Wind
+                            </h2>
+                            <p> Beaufort: ${_station.beaufort} </p>
+                            <p> Wind Direction: ${_station.windDegree}</p>
+                            <p> Max: ${_station.maxWindSpeed} km/hr </p>
+                            <p> Min: ${_station.minWindSpeed} km/hr </p>
+                            <p>Feels like ${_station.windChillValue}</p>
+                            #{if _station.beaufort==0}<p><i class=" large wind   icon"></i> Calm</p>#{/if}
+                            #{if _station.beaufort==1}<p><i class=" large wind  icon"></i> Light Air</p>#{/if}
+                            #{if _station.beaufort==2}<p><i class=" large wind  icon"></i> Light Breeze</p>#{/if}
+                            #{if _station.beaufort==3}<p><i class=" large wind rain  icon"></i> Gentle Breeze</p>#{/if}
+                            #{if _station.beaufort==4}<p><i class=" large wind icon"></i> Moderate Breeze</p>#{/if}
+                            #{if _station.beaufort==5}<p><i class=" large wind  icon"></i> Fresh Breeze</p>#{/if}
+                            #{if _station.beaufort==6}<p><i class=" large wind icon"></i> Strong Breeze</p>#{/if}
+                            #{if _station.beaufort==7}<p><i class=" large wind icon"></i> Near Gale</p>#{/if}
+                            #{if _station.beaufort==8}<p><i class=" large wind icon"></i> Gale</p>#{/if}
+                            #{if _station.beaufort==9}<p><i class=" large wind  icon"></i> Severe Gale</p>#{/if}
+                            #{if _station.beaufort==10}<p><i class=" large wind icon"></i> Strong Storm</p>#{/if}
+                            #{if _station.beaufort==11}<p><i class=" large wind icon"></i> Severe Storm</p>#{/if}
+                            #{if _station.windSpeedLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Steady Wind</p>#{/if}
+                            #{if _station.windSpeedLastValue==1}<p><i class=" large arrow up  icon"></i>Wind Increasing</p>#{/if}
+                            #{if _station.windSpeedLastValue==-1}<p><i class=" large arrow down  icon"></i>Wind Decreasing</p>#{/if}
+
+                        </div>
+
+                    </div>
+
+                    <div class="green column">
+                        <h2 class="ui header">
+                            Pressure
+                        </h2>
+                        <p> ${_station.readings.pressure.last()} hPa</p>
+                        <p> Max:${_station.maxPressure}</p>
+                        <p>Min:${_station.minPressure}</p>
+                        #{if _station.pressureLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Pressure Steady</p>#{/if}
+                        #{if _station.pressureLastValue==1}<p><i class=" large arrow up  icon"></i>Pressure Increasing</p>#{/if}
+                        #{if _station.pressureLastValue==-1}<p><i class=" large arrow down  icon"></i>Pressure Decreasing</p>#{/if}
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+#{/if}

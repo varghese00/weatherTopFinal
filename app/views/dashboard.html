@@ -1,0 +1,127 @@
+#{extends 'main.html' /}
+#{set title:'Station' /}
+
+#{menu id:"dashboard"/}
+
+#{list items:stations, as:'station'}
+
+<section class="ui segment">
+    <div class="two padded basic  segments">
+        <div class=" padded segment">
+            <div class="ui  grid">
+                <div class="ui five column  grid basic row segment  ">
+                    <div class="black column" style="overflow-y:auto;white-space:nowrap;">
+                        <div class="ui grid container ">
+                            <div class=" column">
+                                <h2 class="header">
+                                    ${station.name}
+                                </h2>
+                                <p><i class="large tint icon"></i></p>
+                                <p> Lat: ${station.latitude} <br>
+                                    Long: ${station.longitude} </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="olive column" style="overflow-y:auto;white-space:nowrap;">
+                        <h2 class=" ui header">
+                            Weather
+                        </h2>
+                        <p>
+                            #{if station.readings.size()>0}
+                            #{if station.readings.code.last()=="100"}<p><i class=" large red sun   icon"></i></p>#{/if}
+                        #{if station.readings.code.last()=="200"}<p><i class=" large cloud sun  icon"></i></p>#{/if}
+                        #{if station.readings.code.last()=="300"}<p><i class=" large cloud  icon"></i></p>#{/if}
+                        #{if station.readings.code.last()=="400"}<p><i class=" large cloud sun rain  icon"></i></p>
+                        #{/if}
+                        #{if station.readings.code.last()=="500"}<p><i class=" large cloud showers heavy icon"></i></p>
+                        #{/if}
+                        #{if station.readings.code.last()=="600"}<p><i class=" large cloud rain  icon"></i></p>#{/if}
+                        #{if station.readings.code.last()=="700"}<p><i class=" large snowflake icon"></i></p>#{/if}
+                        #{if station.readings.code.last()=="800"}<p><i class=" large bolt icon"></i></p>#{/if}
+                        #{/if}
+                        </p>
+                    </div>
+
+                    <div class="red column">
+                        <h2 class="ui header">
+                            Temp
+                        </h2>
+                        #{if station.readings.size()>0}
+
+
+                        #{if station.readings.temperature.last()>30}<p><i class=" large temperature high icon"></i> Hot
+                        Weather</p>#{/if}
+                        #{if station.readings.temperature.last()<=30 && station.readings.temperature.last()>20}<p><i
+                            class=" large temperature high icon"></i>In 20s</p>#{/if}
+                        #{if station.readings.temperature.last()<=20 && station.readings.temperature.last()>10}<p><i
+                            class=" large temperature high icon"></i> In 10s</p>#{/if}
+                        #{if station.readings.temperature.last()<=10 && station.readings.temperature.last()>0}<p><i
+                            class=" large temperature low icon"></i>Single Digit Temp</p>#{/if}
+                        #{if station.readings.temperature.last()<=0}<p><i class=" large temperature low icon"></i>
+                        Sub-Zero Temp</p>#{/if}
+
+                        #{/if}
+                        <p> 0.0C </p>
+                        <p> 0.0F </p>
+                        <p> Max:0.0 </p>
+                        <p> Min:0.0 </p>
+
+                    </div>
+
+                    <div class="blue column">
+                        <div>
+                            <h2 class="ui header">
+                                Wind
+                            </h2>
+                            #{if station.readings.size()>0}
+                            #{if station.readings.windSpeed.last()>=1 && station.readings.windSpeed.last()<=5 }<p><i class=" large wind icon"></i> Calm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=6 && station.readings.windSpeed.last()<=11}<p><i class=" large wind icon"></i> Light Air</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=12 && station.readings.windSpeed.last()<=19}<p><i class=" large wind icon"></i> Light Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=20 && station.readings.windSpeed.last()<=28}<p><i class=" large wind icon"></i> Gentle Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=29 && station.readings.windSpeed.last()<=38}<p><i class=" large wind icon"></i> Moderate Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=39 && station.readings.windSpeed.last()<=49}<p><i class=" large wind icon"></i> Fresh Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=50 && station.readings.windSpeed.last()<=61}<p><i class=" large wind icon"></i> Strong Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=62 && station.readings.windSpeed.last()<=74}<p><i class=" large wind icon"></i> Near Gale</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=75 && station.readings.windSpeed.last()<=88}<p><i class=" large wind icon"></i> Severe Gale</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=89 && station.readings.windSpeed.last()<=102}<p><i class=" large wind icon"></i> Strong Storm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=103 && station.readings.windSpeed.last()<=117}<p><i class=" large wind  icon"></i> Violent Storm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>117}<p><i class=" large wind  icon"></i>Extreme Storm</p>#{/if}
+
+                            #{/if}
+                            <p> Beaufort: 0.0 </p>
+                            <p> Feels like: 0.0</p>
+                            <p> Max: 0.0 </p>
+                            <p> Min: 0.0</p>
+                        </div>
+                    </div>
+
+                    <div class="green column">
+                        <h2 class="ui header">
+                            Pressure
+                        </h2>
+                        #{if station.readings.size()>0}
+                        <p> ${station.readings.windSpeed.last()} hPa</p>
+                        #{/if}
+                        <p>Max: 0.0</p>
+                        <p>Min: 0.0</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ui ignored hidden divider"></div>
+        <div class=" segment">
+            <a href="/stations/${station.id}" class="ui icon button">
+                <i class="icon folder open"></i>
+            </a>
+            <a href="/dashboard/deleteStation/${station.id}" class="ui icon button">
+                <i class="icon trash"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+#{/list}
+
+#{addStation/}
