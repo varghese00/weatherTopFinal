@@ -149,4 +149,14 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
+  <component name="dataSourceStorageLocal" created-in="IU-211.7142.45" />
+  <component name="libraryTable">
+    <library name="xstream-1.4.9">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/Downloads/play-1.5.3/play-1.5.3/framework/lib/xstream-1.4.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
 </project>

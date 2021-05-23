@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd40dd40-d589-46ca-9619-00dab56affad" name="Default Changelist" comment="" />
+    <list default="true" id="dd40dd40-d589-46ca-9619-00dab56affad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/About.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/About.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/StationAnalytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/StationAnalytics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/station.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/station.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/addReading.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/addReading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/latestReadingBanner.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/latestReadingBanner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/loginMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/loginMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/signUpMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/signUpMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/stationDashBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/stationDashBoard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/Bootstrap" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/Bootstrap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_start.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_station.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addReading.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addStation.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addStation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_latestReadingBanner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listReadings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_loginMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_loginMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_signUpMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_signUpMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_welcomemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_welcomemenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_conf_data.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.About" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.About" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Accounts" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Accounts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Admin" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Admin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Home" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Home" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Start" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Start" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Member" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Member" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.StationAnalytics" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.StationAnalytics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/Bootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/About.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/About.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Accounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Accounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Station.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/utils/StationAnalytics.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/utils/StationAnalytics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weatherTopWebAppAssignmentFinal.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +90,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,17 +113,38 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/play-1.5.3/play-1.5.3/framework/lib/xstream-1.4.9.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\weatherTop\public\images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\play-1.5.3\modules\docviewer\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,11 +158,23 @@
       <workItem from="1621702029446" duration="3282000" />
       <workItem from="1621706845407" duration="259000" />
       <workItem from="1621707124574" duration="394000" />
-      <workItem from="1621707539291" duration="579000" />
+      <workItem from="1621707539291" duration="27458000" />
+      <workItem from="1621763659118" duration="15644000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

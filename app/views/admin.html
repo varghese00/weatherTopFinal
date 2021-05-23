@@ -11,7 +11,7 @@
         <thead>
         <tr>
             <th>Date/Time</th>
-            <th>Code </th>
+            <th>Code</th>
             <th>Temp</th>
             <th>Wind Speed</th>
             <th>Wind Direction</th>
@@ -43,5 +43,25 @@
         #{/list}
         </tbody>
     </table>
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:members, as:'member'}
+        <tr>
+            <td>${member.firstname}</td>
+            <td>${member.lastname}</td>
+            <td>${member.email}</td>
+            <td>${member.password}</td>
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
 </section>
-
+#{editMemberDetails/}

@@ -52,9 +52,9 @@ Member(m1):
   lastname: simpson
   email: homer@simpson.com
   password: secret
-  playlists:
-    - p1
-    - p2
+  stations:
+    - s1
+    - s2
 
 Member(m2):
   firstname: marge

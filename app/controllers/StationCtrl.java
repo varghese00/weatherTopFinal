@@ -12,19 +12,19 @@ public class StationCtrl extends Controller {
     public static void index(Long id) {
         Station station = Station.findById(id);
         Logger.info("Station id = " + id);
-        station.weatherCode=StationAnalytics.weatherCondition(station.readings);
+        station.weatherCode = StationAnalytics.weatherCondition(station.readings);
         station.minTemperature = StationAnalytics.minTemp(station.readings);
         station.maxTemperature = StationAnalytics.maxTemp(station.readings);
-        station.tempLastValue=StationAnalytics.getTempTrend(station.readings);
+        station.tempLastValue = StationAnalytics.getTempTrend(station.readings);
         station.maxPressure = StationAnalytics.maximumPressure(station.readings);
         station.minPressure = StationAnalytics.minimumPressure(station.readings);
-        station.pressureLastValue=StationAnalytics.getPressureTrend(station.readings);
-        station.beaufort=StationAnalytics.beaufortScale(station.readings);
+        station.pressureLastValue = StationAnalytics.getPressureTrend(station.readings);
+        station.beaufort = StationAnalytics.beaufortScale(station.readings);
         station.maxWindSpeed = StationAnalytics.maximumWindSpeed(station.readings);
         station.minWindSpeed = StationAnalytics.minimumWindSpeed(station.readings);
-        station.windSpeedLastValue=StationAnalytics.getWindSpeedTrend(station.readings);
-        station.windDegree=StationAnalytics.windCompassDegree(station.readings);
-        station.windChillValue=StationAnalytics.windChillMethod(station.readings);
+        station.windSpeedLastValue = StationAnalytics.getWindSpeedTrend(station.readings);
+        station.windDegree = StationAnalytics.windCompassDegree(station.readings);
+        station.windChillValue = StationAnalytics.windChillMethod(station.readings);
         render("station.html", station);
     }
 

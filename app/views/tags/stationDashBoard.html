@@ -23,7 +23,8 @@
                         </h2>
                         <p>
                             #{if _station.readings.size()>0}
-                            #{if _station.readings.code.last()=="100"}<p><i class=" large red sun   icon"></i></p>#{/if}
+                            #{if _station.readings.code.last()=="100"}
+                        <p><i class=" large red sun   icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="200"}<p><i class=" large cloud sun  icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="300"}<p><i class=" large cloud  icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="400"}<p><i class=" large cloud sun rain  icon"></i></p>

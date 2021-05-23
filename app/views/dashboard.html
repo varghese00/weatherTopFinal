@@ -19,6 +19,7 @@
                                 <p><i class="large tint icon"></i></p>
                                 <p> Lat: ${station.latitude} <br>
                                     Long: ${station.longitude} </p>
+
                             </div>
                         </div>
                     </div>
@@ -29,7 +30,8 @@
                         </h2>
                         <p>
                             #{if station.readings.size()>0}
-                            #{if station.readings.code.last()=="100"}<p><i class=" large red sun   icon"></i></p>#{/if}
+                            #{if station.readings.code.last()=="100"}
+                        <p><i class=" large red sun   icon"></i></p>#{/if}
                         #{if station.readings.code.last()=="200"}<p><i class=" large cloud sun  icon"></i></p>#{/if}
                         #{if station.readings.code.last()=="300"}<p><i class=" large cloud  icon"></i></p>#{/if}
                         #{if station.readings.code.last()=="400"}<p><i class=" large cloud sun rain  icon"></i></p>
@@ -75,18 +77,30 @@
                                 Wind
                             </h2>
                             #{if station.readings.size()>0}
-                            #{if station.readings.windSpeed.last()>=1 && station.readings.windSpeed.last()<=5 }<p><i class=" large wind icon"></i> Calm</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=6 && station.readings.windSpeed.last()<=11}<p><i class=" large wind icon"></i> Light Air</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=12 && station.readings.windSpeed.last()<=19}<p><i class=" large wind icon"></i> Light Breeze</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=20 && station.readings.windSpeed.last()<=28}<p><i class=" large wind icon"></i> Gentle Breeze</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=29 && station.readings.windSpeed.last()<=38}<p><i class=" large wind icon"></i> Moderate Breeze</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=39 && station.readings.windSpeed.last()<=49}<p><i class=" large wind icon"></i> Fresh Breeze</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=50 && station.readings.windSpeed.last()<=61}<p><i class=" large wind icon"></i> Strong Breeze</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=62 && station.readings.windSpeed.last()<=74}<p><i class=" large wind icon"></i> Near Gale</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=75 && station.readings.windSpeed.last()<=88}<p><i class=" large wind icon"></i> Severe Gale</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=89 && station.readings.windSpeed.last()<=102}<p><i class=" large wind icon"></i> Strong Storm</p>#{/if}
-                            #{if station.readings.windSpeed.last()>=103 && station.readings.windSpeed.last()<=117}<p><i class=" large wind  icon"></i> Violent Storm</p>#{/if}
-                            #{if station.readings.windSpeed.last()>117}<p><i class=" large wind  icon"></i>Extreme Storm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=1 && station.readings.windSpeed.last()<=5 }<p><i
+                                class=" large wind icon"></i> Calm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=6 && station.readings.windSpeed.last()<=11}<p><i
+                                class=" large wind icon"></i> Light Air</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=12 && station.readings.windSpeed.last()<=19}<p><i
+                                class=" large wind icon"></i> Light Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=20 && station.readings.windSpeed.last()<=28}<p><i
+                                class=" large wind icon"></i> Gentle Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=29 && station.readings.windSpeed.last()<=38}<p><i
+                                class=" large wind icon"></i> Moderate Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=39 && station.readings.windSpeed.last()<=49}<p><i
+                                class=" large wind icon"></i> Fresh Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=50 && station.readings.windSpeed.last()<=61}<p><i
+                                class=" large wind icon"></i> Strong Breeze</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=62 && station.readings.windSpeed.last()<=74}<p><i
+                                class=" large wind icon"></i> Near Gale</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=75 && station.readings.windSpeed.last()<=88}<p><i
+                                class=" large wind icon"></i> Severe Gale</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=89 && station.readings.windSpeed.last()<=102}<p><i
+                                class=" large wind icon"></i> Strong Storm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>=103 && station.readings.windSpeed.last()<=117}<p><i
+                                class=" large wind  icon"></i> Violent Storm</p>#{/if}
+                            #{if station.readings.windSpeed.last()>117}<p><i class=" large wind  icon"></i>Extreme Storm
+                        </p>#{/if}
 
                             #{/if}
                             <p> Beaufort: 0.0 </p>
@@ -101,7 +115,13 @@
                             Pressure
                         </h2>
                         #{if station.readings.size()>0}
-                        <p> ${station.readings.windSpeed.last()} hPa</p>
+                        #{if station.readings.pressure.last()>1022}<p><i class="large atom icon"></i>High Pressure</p>
+                        #{/if}
+                        #{if station.readings.pressure.last()<1009}<p><i class="large atom icon"></i>Low Pressure</p>
+                        #{/if}
+                        #{if station.readings.pressure.last()<=1022 && station.readings.pressure.last()>=1009 }<p><i
+                            class="large atom icon"></i>Normal Pressure</p>
+                        #{/if}
                         #{/if}
                         <p>Max: 0.0</p>
                         <p>Min: 0.0</p>

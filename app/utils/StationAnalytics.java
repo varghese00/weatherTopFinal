@@ -12,29 +12,6 @@ public class StationAnalytics {
 
     //Weather Condition Methods
 
-    //    public static String weatherCondition(int code) {
-//
-//        switch (code) {
-//            case 100:
-//                return "Clear";
-//            case 200:
-//                return "Partial Clouds";
-//            case 300:
-//                return "Cloudy";
-//            case 400:
-//                return "Light Showers";
-//            case 500:
-//                return "Heavy Showers";
-//            case 600:
-//                return "Rain";
-//            case 700:
-//                return "Snow";
-//            case 800:
-//                return "Thunder";
-//        }
-//
-//        return String.valueOf(code);
-//    }
     public static String weatherCondition(List<Reading> readings) {
         Reading weatherCode = null;
         int n = readings.size();
@@ -109,27 +86,25 @@ public class StationAnalytics {
         }
         return maxTemperature != null ? maxTemperature.temperature : 0;
     }
-    public static double getTempTrend(List<Reading>readings){
+
+    public static double getTempTrend(List<Reading> readings) {
         Reading tempSecondLastValue = null;
         Reading tempLastValue = null;
         int n = readings.size();
-        if(n>0) {
-            if(n == 1) {
+        if (n > 0) {
+            if (n == 1) {
                 tempLastValue = readings.get(0);
                 tempSecondLastValue = readings.get(0);
-            }
-            else{
-                tempLastValue = readings.get(n-1);
-                tempSecondLastValue = readings.get(n-2);
+            } else {
+                tempLastValue = readings.get(n - 1);
+                tempSecondLastValue = readings.get(n - 2);
             }
 
             if (tempSecondLastValue.temperature < tempLastValue.temperature) {
                 return 1;
-            }
-            else if (tempSecondLastValue.temperature > tempLastValue.temperature){
+            } else if (tempSecondLastValue.temperature > tempLastValue.temperature) {
                 return -1;
-            }
-            else if (tempSecondLastValue.temperature == tempLastValue.temperature){
+            } else if (tempSecondLastValue.temperature == tempLastValue.temperature) {
                 return 0;
             }
         }
@@ -138,52 +113,7 @@ public class StationAnalytics {
 
     //WindSpeed Method for Beaufort
 
-//    public static int beaufortScale(int windSpeed) {
-//
-//
-//        if (windSpeed < 1) {
-//            return 0;
-//        }
-//        else if (windSpeed > 1 && windSpeed <= 5) {
-//            return 1;
-//        }
-//        else if (windSpeed >= 6 && windSpeed <= 11) {
-//            return 2;
-//        }
-//        else if (windSpeed >= 12 && windSpeed <= 19) {
-//            return 3;
-//        }
-//        else if (windSpeed >= 20 && windSpeed <= 28) {
-//            return 4;
-//        }
-//        else if (windSpeed >= 29 && windSpeed <= 38) {
-//            return 5;
-//        }
-//        else if (windSpeed >= 39 && windSpeed <= 49) {
-//            return 6;
-//        }
-//        else if (windSpeed >= 50 && windSpeed <= 61) {
-//            return 7;
-//        }
-//        else if (windSpeed >= 62 && windSpeed <= 74) {
-//            return 8;
-//        }
-//        else if (windSpeed >= 75 && windSpeed <= 88) {
-//            return 9;
-//        }
-//        else if (windSpeed >= 89 && windSpeed <= 102) {
-//            return 10;
-//        }
-//        else if (windSpeed >= 103 && windSpeed <= 200) {
-//            return 11;
-//        }
-//        else {
-//            return 0;
-//        }
-//
-//    }
-
-    public static int beaufortScale(List<Reading>readings) {
+    public static int beaufortScale(List<Reading> readings) {
         Reading beaufort = null;
         int n = readings.size();
         if (n > 0) {
@@ -225,73 +155,27 @@ public class StationAnalytics {
         return 0;
     }
 
-//    public static int beaufortScale(int windSpeed) {
-//
-//        if (windSpeed < 1) {
-//            return 0;
-//        }
-//        else if (windSpeed > 1 && windSpeed <= 5) {
-//            return 1;
-//        }
-//        else if (windSpeed >= 6 && windSpeed <= 11) {
-//            return 2;
-//        }
-//        else if (windSpeed >= 12 && windSpeed <= 19) {
-//            return 3;
-//        }
-//        else if (windSpeed >= 20 && windSpeed <= 28) {
-//            return 4;
-//        }
-//        else if (windSpeed >= 29 && windSpeed <= 38) {
-//            return 5;
-//        }
-//        else if (windSpeed >= 39 && windSpeed <= 49) {
-//            return 6;
-//        }
-//        else if (windSpeed >= 50 && windSpeed <= 61) {
-//            return 7;
-//        }
-//        else if (windSpeed >= 62 && windSpeed <= 74) {
-//            return 8;
-//        }
-//        else if (windSpeed >= 75 && windSpeed <= 88) {
-//            return 9;
-//        }
-//        else if (windSpeed >= 89 && windSpeed <= 102) {
-//            return 10;
-//        }
-//        else if (windSpeed >= 103 && windSpeed <= 200) {
-//            return 11;
-//        }
-//        else {
-//            return 0;
-//        }
-//
-//    }
 
     //Wind Speed Trend
 
-    public static int getWindSpeedTrend(List<Reading>readings){
+    public static int getWindSpeedTrend(List<Reading> readings) {
         Reading windSpeedSecondLastValue = null;
         Reading windSpeedLastValue = null;
         int n = readings.size();
-        if(n>0) {
-            if(n == 1) {
+        if (n > 0) {
+            if (n == 1) {
                 windSpeedLastValue = readings.get(0);
                 windSpeedSecondLastValue = readings.get(0);
-            }
-            else{
-                windSpeedLastValue = readings.get(n-1);
-                windSpeedSecondLastValue = readings.get(n-2);
+            } else {
+                windSpeedLastValue = readings.get(n - 1);
+                windSpeedSecondLastValue = readings.get(n - 2);
             }
 
             if (windSpeedSecondLastValue.windSpeed < windSpeedLastValue.windSpeed) {
                 return 1;
-            }
-            else if (windSpeedSecondLastValue.windSpeed > windSpeedLastValue.windSpeed){
+            } else if (windSpeedSecondLastValue.windSpeed > windSpeedLastValue.windSpeed) {
                 return -1;
-            }
-            else {
+            } else {
                 return 0;
             }
         }
@@ -327,65 +211,9 @@ public class StationAnalytics {
     }
 
 
-
     //WindDirection method for direction of wind
 
-//    public static String windCompassDegree(double windDirection) {
-//
-//        if (windDirection>348.75 && windDirection<= 11.25) {
-//            return "North";
-//        }
-//        if (windDirection > 11.25 && windDirection <= 33.75) {
-//            return "North-NorthEast";
-//        }
-//        if (windDirection >33.75 && windDirection <= 56.25) {
-//            return "North East";
-//        }
-//        if (windDirection >56.25 && windDirection <= 78.75) {
-//            return "East-NorthEast";
-//        }
-//        if (windDirection >78.75 && windDirection <= 101.25) {
-//            return "East";
-//        }
-//        if (windDirection >101.25 && windDirection <= 123.75) {
-//            return "East-SouthEast";
-//        }
-//        if (windDirection >123.75 && windDirection <= 146.25) {
-//            return "SouthEast";
-//        }
-//        if (windDirection >146.25 && windDirection <= 168.75) {
-//            return "South-SouthEast";
-//        }
-//        if (windDirection >168.75 && windDirection <= 191.25) {
-//            return "South";
-//        }
-//        if (windDirection > 191.25 && windDirection <= 213.75) {
-//            return "South-SouthWest";
-//        }
-//        if (windDirection >213.75 && windDirection <= 236.25) {
-//            return "SouthWest";
-//        }
-//        if (windDirection > 236.25 && windDirection <= 258.75) {
-//            return "West-SouthWest";
-//        }
-//        if (windDirection >258.75 && windDirection <= 281.25) {
-//            return "West";
-//        }
-//        if (windDirection > 281.25 && windDirection <= 303.75) {
-//            return "West-NorthWest";
-//        }
-//        if (windDirection >303.75 && windDirection <= 326.25) {
-//            return "NorthWest";
-//        }
-//        if (windDirection > 326.25 && windDirection <= 348.75) {
-//            return "North-NorthWest";
-//        }
-//
-//        return String.valueOf(windDirection);
-//
-//    }
-
-    public static String windCompassDegree(List<Reading>readings) {
+    public static String windCompassDegree(List<Reading> readings) {
         Reading windDegree = null;
         int n = readings.size();
         if (n > 0) {
@@ -449,39 +277,22 @@ public class StationAnalytics {
 
     //Wind Chill Method
 
-    public static double windChillMethod(int windSpeed,double temperature ){
-
-        double windChill= 13.12 + 0.6215 *temperature-11.37*(Math.pow(windSpeed,0.16))+0.3965*temperature*(Math.pow(windSpeed,0.16));
-        return Math.round(windChill*100.0)/100.0;
-    }
-
-//    public static double windChillMethod(int windSpeed,double temperature,List<Reading>readings) {
-//        Reading windChill=null ;
-//        double windChillValue=0;
-//        int n = readings.size();
-//        if (n > 0) {
-//            if (n==1){
-//                windChill = readings.get(0);
-//            }
-//            else {
-//                windChill = readings.get(n-1);
-//            }
-//               windChillValue = ((13.12 + (0.6215 * windChill.temperature)) - (11.37 * (Math.pow(windChill.windSpeed, 0.16)))) + (0.3965 * windChill.temperature * (Math.pow(windChill.windSpeed, 0.16)));
-//                return Math.round(windChillValue * 100.0) / 100.0;
-//        }
-//        return 0;
+//    public static double windChillMethod(int windSpeed, double temperature) {
+//
+//        double windChill = 13.12 + 0.6215 * temperature - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16));
+//        return Math.round(windChill * 100.0) / 100.0;
 //    }
 
-    public static double windChillMethod(List<Reading>readings) {
-        Reading windChill=null ;
-        double windChillValue=0;
+
+    public static double windChillMethod(List<Reading> readings) {
+        Reading windChill = null;
+        double windChillValue = 0;
         int n = readings.size();
         if (n > 0) {
-            if (n==1){
+            if (n == 1) {
                 windChill = readings.get(0);
-            }
-            else {
-                windChill = readings.get(n-1);
+            } else {
+                windChill = readings.get(n - 1);
             }
             windChillValue = ((13.12 + (0.6215 * windChill.temperature)) - (11.37 * (Math.pow(windChill.windSpeed, 0.16)))) + (0.3965 * windChill.temperature * (Math.pow(windChill.windSpeed, 0.16)));
             return Math.round(windChillValue * 100.0) / 100.0;
@@ -518,27 +329,24 @@ public class StationAnalytics {
         return maxPressure != null ? maxPressure.pressure : 0;
     }
 
-    public static int getPressureTrend(List<Reading>readings){
+    public static int getPressureTrend(List<Reading> readings) {
         Reading pressureSecondLastValue = null;
         Reading pressureLastValue = null;
         int n = readings.size();
-        if(n>0) {
-            if(n == 1) {
+        if (n > 0) {
+            if (n == 1) {
                 pressureLastValue = readings.get(0);
                 pressureSecondLastValue = readings.get(0);
-            }
-            else{
-                pressureLastValue = readings.get(n-1);
-                pressureSecondLastValue = readings.get(n-2);
+            } else {
+                pressureLastValue = readings.get(n - 1);
+                pressureSecondLastValue = readings.get(n - 2);
             }
 
             if (pressureSecondLastValue.pressure < pressureLastValue.pressure) {
                 return 1;
-            }
-            else if (pressureSecondLastValue.pressure > pressureLastValue.pressure){
+            } else if (pressureSecondLastValue.pressure > pressureLastValue.pressure) {
                 return -1;
-            }
-            else {
+            } else {
                 return 0;
             }
         }

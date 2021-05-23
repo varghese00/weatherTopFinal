@@ -11,8 +11,7 @@ import javax.persistence.OneToMany;
 import play.db.jpa.Model;
 
 @Entity
-public class Station extends Model
-{
+public class Station extends Model {
     public String name;
     @OneToMany(cascade = CascadeType.ALL)
     public List<Reading> readings = new ArrayList<Reading>(); //List Reading object is an arraylist called readings
@@ -32,13 +31,11 @@ public class Station extends Model
     public double windChill;
     public double windChillValue;
     public int windSpeedLastValue;
-    public HashMap<Integer,String> weatherIcons;
 
-    public Station(String name, double latitude,double longitude)
-    {
+    public Station(String name, double latitude, double longitude) {
         this.name = name;
         this.latitude = latitude;
-        this.longitude=longitude;
+        this.longitude = longitude;
     }
 
 

@@ -4,9 +4,9 @@ import play.*;
 import play.mvc.*;
 
 
-public class Home extends Controller{
+public class Home extends Controller {
     public static void index() {
         Logger.info("Rendering home");
-        render ("home.html");
+        render("home.html");
     }
 }

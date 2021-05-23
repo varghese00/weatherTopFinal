@@ -24,8 +24,10 @@
                         #{if _station.readings.code.last()=="100"}<p><i class=" large red sun   icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="200"}<p><i class=" large cloud sun  icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="300"}<p><i class=" large cloud  icon"></i></p>#{/if}
-                        #{if _station.readings.code.last()=="400"}<p><i class=" large cloud sun rain  icon"></i></p>#{/if}
-                        #{if _station.readings.code.last()=="500"}<p><i class=" large cloud showers heavy icon"></i></p>#{/if}
+                        #{if _station.readings.code.last()=="400"}<p><i class=" large cloud sun rain  icon"></i></p>
+                        #{/if}
+                        #{if _station.readings.code.last()=="500"}<p><i class=" large cloud showers heavy icon"></i></p>
+                        #{/if}
                         #{if _station.readings.code.last()=="600"}<p><i class=" large cloud rain  icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="700"}<p><i class=" large snowflake icon"></i></p>#{/if}
                         #{if _station.readings.code.last()=="800"}<p><i class=" large bolt icon"></i></p>#{/if}
@@ -39,12 +41,15 @@
                         <p>${_station.readings.temperature.last()*9/5+32} F </p>
                         <p> Max:${_station.maxTemperature} </p>
                         <p> Min:${_station.minTemperature} </p>
-                        <p> TemValue:${_station.tempLastValue} </p>
-                        #{if _station.readings.temperature.last()>=25}<p><i class=" large temperature high icon"></i> Hot Weather</p>#{/if}
-                        #{if _station.readings.temperature.last()<25}<p><i class=" large temperature low icon"></i> Cold Weather</p>#{/if}
-                        #{if _station.tempLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Temp Steady</p>#{/if}
+                        #{if _station.readings.temperature.last()>=25}<p><i class=" large temperature high icon"></i>
+                        Hot Weather</p>#{/if}
+                        #{if _station.readings.temperature.last()<25}<p><i class=" large temperature low icon"></i> Cold
+                        Weather</p>#{/if}
+                        #{if _station.tempLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Temp
+                        Steady</p>#{/if}
                         #{if _station.tempLastValue==1}<p><i class=" large arrow up  icon"></i>Temp Increasing</p>#{/if}
-                        #{if _station.tempLastValue==-1}<p><i class=" large arrow down  icon"></i>Temp Decreasing</p>#{/if}
+                        #{if _station.tempLastValue==-1}<p><i class=" large arrow down  icon"></i>Temp Decreasing</p>
+                        #{/if}
 
                     </div>
 
@@ -70,9 +75,12 @@
                             #{if _station.beaufort==9}<p><i class=" large wind  icon"></i> Severe Gale</p>#{/if}
                             #{if _station.beaufort==10}<p><i class=" large wind icon"></i> Strong Storm</p>#{/if}
                             #{if _station.beaufort==11}<p><i class=" large wind icon"></i> Severe Storm</p>#{/if}
-                            #{if _station.windSpeedLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Steady Wind</p>#{/if}
-                            #{if _station.windSpeedLastValue==1}<p><i class=" large arrow up  icon"></i>Wind Increasing</p>#{/if}
-                            #{if _station.windSpeedLastValue==-1}<p><i class=" large arrow down  icon"></i>Wind Decreasing</p>#{/if}
+                            #{if _station.windSpeedLastValue==0}<p><i
+                                class=" large arrows alternate horizontal   icon"></i>Steady Wind</p>#{/if}
+                            #{if _station.windSpeedLastValue==1}<p><i class=" large arrow up  icon"></i>Wind Increasing
+                        </p>#{/if}
+                            #{if _station.windSpeedLastValue==-1}<p><i class=" large arrow down  icon"></i>Wind
+                            Decreasing</p>#{/if}
 
                         </div>
 
@@ -85,9 +93,12 @@
                         <p> ${_station.readings.pressure.last()} hPa</p>
                         <p> Max:${_station.maxPressure}</p>
                         <p>Min:${_station.minPressure}</p>
-                        #{if _station.pressureLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Pressure Steady</p>#{/if}
-                        #{if _station.pressureLastValue==1}<p><i class=" large arrow up  icon"></i>Pressure Increasing</p>#{/if}
-                        #{if _station.pressureLastValue==-1}<p><i class=" large arrow down  icon"></i>Pressure Decreasing</p>#{/if}
+                        #{if _station.pressureLastValue==0}<p><i class=" large arrows alternate horizontal   icon"></i>Pressure
+                        Steady</p>#{/if}
+                        #{if _station.pressureLastValue==1}<p><i class=" large arrow up  icon"></i>Pressure Increasing
+                    </p>#{/if}
+                        #{if _station.pressureLastValue==-1}<p><i class=" large arrow down  icon"></i>Pressure
+                        Decreasing</p>#{/if}
 
                     </div>
 
